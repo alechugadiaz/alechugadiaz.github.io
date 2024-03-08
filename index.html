@@ -49,15 +49,15 @@
         <button class="btn btn-primary" onclick="filterSelection('engineering')"> Engineering</button>
         <button class="btn btn-primary" onclick="filterSelection('design')"> Design</button>
         <button class="btn btn-primary" onclick="filterSelection('computer science')"> Computer Science</button>
-        <button class="btn btn-primary" onclick="filterSelection('mini projects')"> Mini Projects</button>
+        <button class="btn btn-primary" onclick="filterSelection('mini-projects')"> Mini Projects</button>
       </div>
     </div>
     <div class="row">
-      <figure id="injection-molded-toy" class="col-sm-4 filterDiv design">
+      <figure id="injection-molded-toy" class="col-sm-4 filterDiv design engineering">
         <div class="image-container">
           <img src="imt/injection-molding-project.png" alt="Injection Molded Toy">
           <div class="image-text">
-            <h3>Injection Molded Toy</h3> <!-- <p>This is the kitchen image.</p> -->
+            <h3>Injection Molded Toy</h3>
           </div>
         </div>
       </figure>
@@ -65,23 +65,31 @@
         <div class="image-container">
           <img src="cmtm/topographical-map-project.jpeg" alt="Topographical Map Project">
           <div class="image-text">
-            <h3>CNC-Milled Topographical Map</h3> <!-- <p>This is the woodwork image.</p> -->
+            <h3>CNC-Milled Topographical Map</h3>
           </div>
         </div>
       </figure>
-      <figure class="col-sm-4 filterDiv engineering design">
+      <figure id="phone-case" class="col-sm-4 filterDiv engineering design">
         <div class="image-container">
           <img src="3dpc/3D-printed-phone-case-project.jpeg" alt="3D Printed Phone Case">
           <div class="image-text">
-            <h3>3D Printed Phone Case</h3> <!-- <p>This is the gifts image.</p> -->
+            <h3>3D Printed Phone Case</h3>
           </div>
         </div>
       </figure>
-      <figure class="col-sm-4 filterDiv engineering computer science">
+      <figure id="jack-in-a-box" class="col-sm-4 filterDiv engineering computer science">
         <div class="image-container">
           <img src="jiabd/Jack-in-a-box-dynamics.png" alt="Jack-in-a-box Dynamics Simulation">
           <div class="image-text">
-            <h3>Jack-in-a-box Dynamics</h3> <!-- <p>This is the antiques image.</p> -->
+            <h3>Jack-in-a-box Dynamics</h3> 
+          </div>
+        </div>
+      </figure>
+      <figure class="col-sm-4 filterDiv design engineering computer science mini-projects">
+        <div class="image-container">
+          <img src="projects-coming-soon.png" alt="Projects Coming Soon!">
+          <div class="image-text">
+            <h3>More Coming Soon!</h3>
           </div>
         </div>
       </figure>
@@ -252,31 +260,12 @@
       </div>
     </div>
   </section>
-<!--
-  <section class="jumbotron project-details" id="topographical-map-details" style="display:none;">
-    <div class="container">
-      <div class="row">
-        <h2 class="col-sm-12">CNC Milled Topographical Map</h2>
-      </div>
-      <div class="row">
-        <h3 class="col-sm-4">Class</h3>
-        <h3 class="col-sm-4">Timeline</h3>
-        <h3 class="col-sm-4">Skills</h3>
-      </div>
-      <div class="row">
-        <p class="col-sm-4">DSGN 345: Computer-Aided Manufacturing</p>
-        <p class="col-sm-4">September 2023 - October 2023</p>
-        <p class="col-sm-4">Sketching, CAD (NX Siemens), CAM (NX Siemens), CNC Mill Machining, 
-          Error Analysis, Product Design, Technical Writing</p>
-      </div>
-    </div>
-  </section> -->
   
   <section class="jumbotron project-details" id="topographical-map-details" style="display:none;">
     <!-- Content of the jumbotron container will be added dynamically -->
     <div class="container">
       <div class="row">
-        <h2 class="col-sm-12">CNC Milled Topographical Map</h2>
+        <h2 class="col-sm-12">CNC Milled Topographical Map - More Info Coming Soon!</h2>
         <hr>
       </div>
       <div class="row">
@@ -286,7 +275,7 @@
       </div>
       <div class="row">
         <p class="col-sm-4">DSGN 345: Computer-Aided Manufacturing</p>
-        <p class="col-sm-3">September '23 - December '23</p>
+        <p class="col-sm-3">September '23 - October '23</p>
         <p class="col-sm-5">Sketching, CAD (NX Siemens), CAM (NX Siemens), CNC Mill Machining, 
           Error Analysis, Product Design, Technical Writing</p>
       </div>
@@ -295,9 +284,9 @@
           <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000" data-pause="hover">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li> <!--
               <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li> -->
             </ol>
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
@@ -307,7 +296,7 @@
                   <h3>Grand Canyon CAD</h3>
                   <p>After scouring the world map, I decided to use the Grand Canyon's landscape.</p>
                 </div>
-              </div>
+              </div> <!--
               <div class="item">
                 <img src="cmtm/topographical-map-op1.png" alt="Initial Roughing: 3D Adaptive Roughing" style="max-height: 500px; width: auto; margin: 0 auto;">
                 <div class="Initial Roughing">
@@ -321,7 +310,7 @@
                   <h3>Full CAD Assembly</h3>
                   <p>...</p>
                 </div>
-              </div>
+              </div> -->
             </div>
             <!-- Left and right controls -->
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -341,7 +330,7 @@
                   <h4>Goal:</h4>
                   <p>Design and fabricate a CNC-Milled project of my choice.</p>
                   <h4>Description:</h4>
-                  <p>A half-quarter solo project for a Rapid Prototyping course, where I 
+                  <p>A half-quarter solo project for a CAM design course, where I 
                     take a user-centric approach to take design conception to a realized product.</p>
               </div>
           </div>
@@ -364,6 +353,206 @@
           </div>
           <div class="row">
             <a class="btn btn-primary" href="cmtm/DSGN 345 Final Report.pdf" role="button" target="_blank" style="font-size: 18px; margin: 10px 10px;">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="jumbotron project-details" id="phone-case-details" style="display:none;">
+    <!-- Content of the jumbotron container will be added dynamically -->
+    <div class="container">
+      <div class="row">
+        <h2 class="col-sm-12">3D Printed Phone Case - More Info Coming Soon!</h2>
+        <hr>
+      </div>
+      <div class="row">
+        <h3 class="col-sm-4">Class</h3>
+        <h3 class="col-sm-3">Timeline</h3>
+        <h3 class="col-sm-5">Skills</h3>
+      </div>
+      <div class="row">
+        <p class="col-sm-4">DSGN 348: Rapid Prototyping</p>
+        <p class="col-sm-3">October '23 - December '23</p>
+        <p class="col-sm-5">Sketching, CAD (SolidWorks), 3D Printing (FDM, SLA, Binder Jetting), 
+          Error Analysis, Product Design, Technical Writing</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-6"> <!-- i removed the text center here -->
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000" data-pause="hover">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li> <!--
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li> -->
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="3dpc/3D-printed-phone-case-project.jpeg" alt="3D Printed Phone Case" style="max-height: 500px; width: auto; margin: 0 auto;">
+                <div class="carousel-caption">
+                  <h3>3D Printed Phone Case</h3>
+                  <p>Final 1988 GMC Sierra Phone Case Design</p>
+                </div>
+              </div> <!--
+              <div class="item">
+                <img src="cmtm/topographical-map-op1.png" alt="Initial Roughing: 3D Adaptive Roughing" style="max-height: 500px; width: auto; margin: 0 auto;">
+                <div class="Initial Roughing">
+                  <h3>Hoop and Tree CAD Parts</h3>
+                  <p>...</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="cmtm/topographical-map-op2.png" alt="Initial Semi-Finish: Cavity Mill" style="max-height: 500px; width: auto; margin: 0 auto;">
+                <div class="Initial Semi-Finish">
+                  <h3>Full CAD Assembly</h3>
+                  <p>...</p>
+                </div>
+              </div> -->
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row">
+              <div class="col-sm-12">
+                  <h3 style="margin: 10px 0 16px 0;">Overview</h3>
+                  <h4>Goal:</h4>
+                  <p>Design and fabricate a usable 3D-printed phone case.</p>
+                  <h4>Description:</h4>
+                  <p>A half-quarter solo project for a Rapid Prototyping course, where I 
+                    take a user-centric approach to take design conception to a realized product.</p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-6">
+                  <h4>My Role:</h4>
+                  <ul>
+                      <li>Illustrator</li>
+                      <li>CAD Designer</li>
+                      <li>Additive Manufacturer</li>
+                  </ul>
+              </div>
+              <div class="col-sm-6">
+                  <h4>Technology Utilized:</h4>
+                  <ul>
+                      <li>Prusa MK3S+</a></li>
+                      <li>FormLabs Form 3</li>
+                      <li>Stratasys J826</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="row">
+            <a class="btn btn-primary" href="3dpc/DSGN 348 Final Report.pdf" role="button" target="_blank" style="font-size: 18px; margin: 10px 10px;">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="jumbotron project-details" id="jack-in-a-box-details" style="display:none;">
+    <!-- Content of the jumbotron container will be added dynamically -->
+    <div class="container">
+      <div class="row">
+        <h2 class="col-sm-12">Jack-in-a-box Dynamics - More Info Coming Soon!</h2>
+        <hr>
+      </div>
+      <div class="row">
+        <h3 class="col-sm-4">Class</h3>
+        <h3 class="col-sm-3">Timeline</h3>
+        <h3 class="col-sm-5">Skills</h3>
+      </div>
+      <div class="row">
+        <p class="col-sm-4">ME 314: Dynamics</p>
+        <p class="col-sm-3">March '23 - June '23</p>
+        <p class="col-sm-5">Python, SymPy, Dynamics Simulations, Technical Writing</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-6"> <!-- i removed the text center here -->
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000" data-pause="hover">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li> <!--
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li> -->
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="jiabd/Jack-in-a-box-dynamics.png" alt="Jack-in-a-box Dynamics" style="max-height: 500px; width: auto; margin: 0 auto;">
+                <div class="carousel-caption">
+                  <h3>Jack-in-a-box Dynamics Simulation</h3>
+                  <p>Still-frame of the dynamics simulation on Google Colab.</p>
+                </div>
+              </div> <!--
+              <div class="item">
+                <img src="cmtm/topographical-map-op1.png" alt="Initial Roughing: 3D Adaptive Roughing" style="max-height: 500px; width: auto; margin: 0 auto;">
+                <div class="Initial Roughing">
+                  <h3>Hoop and Tree CAD Parts</h3>
+                  <p>...</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="cmtm/topographical-map-op2.png" alt="Initial Semi-Finish: Cavity Mill" style="max-height: 500px; width: auto; margin: 0 auto;">
+                <div class="Initial Semi-Finish">
+                  <h3>Full CAD Assembly</h3>
+                  <p>...</p>
+                </div>
+              </div> -->
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row">
+              <div class="col-sm-12">
+                  <h3 style="margin: 10px 0 16px 0;">Overview - Details Coming Soon!</h3>
+                  <h4>Goal:</h4>
+                  <p>...</p>
+                  <h4>Description:</h4>
+                  <p>...</p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-6">
+                  <h4>My Role:</h4>
+                  <ul>
+                      <li>...</li>
+                      <li>...</li>
+                      <li>...</li>
+                  </ul>
+              </div>
+              <div class="col-sm-6">
+                  <h4>Technology Utilized:</h4>
+                  <ul>
+                      <li>Google Colab</a></li>
+                      <li>Python</li>
+                      <li>...</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="row">
+            <a class="btn btn-primary" href="jiabd/ME314 - Final Project Write-Up.pdf" role="button" target="_blank" style="font-size: 18px; margin: 10px 10px;">
               Read More
             </a>
           </div>

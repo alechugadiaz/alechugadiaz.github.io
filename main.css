@@ -231,18 +231,10 @@ section .row img {
   /*border: 4px solid white;*/
 }
 
-#injection-molded-toy-details {
-  display: flex;
-  align-items: center;
-  background-image: url('dwg1-black.png');
-  background-size: 100% 100%;
-  color: #ffffff;
-  min-height: 1000px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
-  overflow: auto;
-}
-
-#topographical-map-details {
+#injection-molded-toy-details,
+#topographical-map-details,
+#phone-case-details,
+#jack-in-a-box-details {
   display: flex;
   align-items: center;
   background-image: url('dwg1-black.png');
